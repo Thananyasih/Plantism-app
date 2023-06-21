@@ -1,10 +1,36 @@
 * {
   margin: 0;
+  font-family: "Athiti", sans-serif;
 }
+
 .nav-container {
-  text-align: left;
-  background-color: aqua;
+  position: relative;
+  background-color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 80px;
 }
-.nav-head-container {
-  background-color: azure;
+.nav-container a {
+  text-decoration: none;
+  color: #282c34;
+  font-size: 25px;
+  position: relative;
+}
+
+.nav-container a:hover {
+  color: #fff;
+  font-weight: 500;
+  background-color: rgb(163, 180, 145);
+  /* background-color: rgb(226, 234, 217); */
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: ease-in-out 0.2s;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  top: 20px;
+  left: 120px;
+  position: absolute;
+  padding: 10px 30px;
 }
