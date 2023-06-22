@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital@0;1&family=Poppins:wght@200;400;600&family=Tenor+Sans&display=swap");
 
 .App {
   text-align: center;
@@ -17,7 +18,9 @@
 
 .App-header {
   position: static;
-  background-color: rgb(226, 234, 217);
+  /* background-color: rgb(226, 234, 217); */
+  /* background-color: rgb(163, 180, 145); */
+  background-color: #fff;
   min-height: 100vh;
 }
 
@@ -35,10 +38,16 @@
 }
 
 .web-logo {
+  /* background-color: rgb(255, 169, 169); */
+  padding: 5px 10px;
   position: absolute;
-  width: 50px;
+  width: 40px;
   height: auto;
-  top: 0;
-  left: 20px;
-  margin: 15px;
+  top: 0px;
+  left: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 30%;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }

@@ -5,7 +5,10 @@ const NavbarElement = () => {
   return (
     <div>
       <div className="nav-container">
-        <a className="nav-link" href="/Home">
+        <div className="head-logo">
+          <h1>PLANTISM</h1>
+        </div>
+        <a className="active" href="/Home">
           Home
         </a>
         <a className="nav-link" href="/About">
