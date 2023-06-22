@@ -54,6 +54,7 @@
   left: 500px;
   position: absolute;
   padding: 10px 30px;
+  padding-top: 0px;
 }
 
 .active {
