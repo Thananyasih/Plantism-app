@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./NavbarElement.css";
 
 const NavbarElement = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+    <nav>
       <div className="nav-container">
         <div className="head-logo">
           <h1>PLANTISM</h1>
@@ -24,7 +26,7 @@ const NavbarElement = () => {
           Blogs
         </a>
       </div>
-    </div>
+    </nav>
   );
 };
 
