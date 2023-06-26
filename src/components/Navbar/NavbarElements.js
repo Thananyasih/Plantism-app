@@ -10,21 +10,28 @@ const NavbarElement = () => {
         <div className="head-logo">
           <h1>PLANTISM</h1>
         </div>
-        <a className="active" href="/Home">
-          Home
-        </a>
-        <a className="nav-link" href="/About">
-          About
-        </a>
-        <a className="nav-link" href="/Plantalog">
-          Plantalog
-        </a>
-        <a className="nav-link" href="/Design">
-          Design | Space
-        </a>
-        <a className="nav-link" href="/Blogs">
-          Blogs
-        </a>
+        <div className={`navbar-start ${isOpen && "is-active"}`}>
+          <NavLink
+            className="navbar-item"
+            activeClassName="is-active"
+            to="/"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Home
+          </NavLink>
+          <NavLink className="nav-link" href="/About">
+            About
+          </NavLink>
+          <NavLink className="nav-link" href="/Plantalog">
+            Plantalog
+          </NavLink>
+          <NavLink className="nav-link" href="/Design">
+            Design | Space
+          </NavLink>
+          <NavLink className="nav-link" href="/Blogs">
+            Blogs
+          </NavLink>
+        </div>
       </div>
     </nav>
   );
