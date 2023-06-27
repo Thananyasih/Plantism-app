@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./NavbarElement.css";
 
 const NavbarElement = () => {
@@ -10,28 +10,60 @@ const NavbarElement = () => {
         <div className="head-logo">
           <h1>PLANTISM</h1>
         </div>
-        <div className={`navbar-start ${isOpen && "is-active"}`}>
-          <NavLink
-            className="navbar-item"
-            activeClassName="is-active"
-            to="/"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            Home
-          </NavLink>
-          <NavLink className="nav-link" href="/About">
-            About
-          </NavLink>
-          <NavLink className="nav-link" href="/Plantalog">
-            Plantalog
-          </NavLink>
-          <NavLink className="nav-link" href="/Design">
-            Design | Space
-          </NavLink>
-          <NavLink className="nav-link" href="/Blogs">
-            Blogs
-          </NavLink>
-        </div>
+        <ul>
+          <li>
+            <Link
+              className="nav-link"
+              activeClassName="is-active"
+              to="/"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className="nav-link"
+              activeClassName="is-active"
+              to="/About"
+              exact
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              About
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className="nav-link"
+              activeClassName="is-active"
+              to="/Plantalog"
+              exact
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              Plantalog
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className="nav-link"
+              activeClassName="is-active"
+              to="/Design"
+              exact
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              Design | Space
+            </Link>
+          </li>
+
+          <li>
+            <Link className="nav-link" href="/Blogs">
+              Blogs
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
