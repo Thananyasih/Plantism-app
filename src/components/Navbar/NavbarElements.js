@@ -10,19 +10,17 @@ const NavbarElement = () => {
         <div className="head-logo">
           <h1>PLANTISM</h1>
         </div>
-        <ul>
-          <li>
+        <div className="link-wrapper">
+          <ul>
             <Link
-              className="nav-link"
+              className="active"
               activeClassName="is-active"
               to="/"
               onClick={() => setIsOpen(!isOpen)}
             >
               Home
             </Link>
-          </li>
 
-          <li>
             <Link
               className="nav-link"
               activeClassName="is-active"
@@ -32,9 +30,7 @@ const NavbarElement = () => {
             >
               About
             </Link>
-          </li>
 
-          <li>
             <Link
               className="nav-link"
               activeClassName="is-active"
@@ -44,9 +40,7 @@ const NavbarElement = () => {
             >
               Plantalog
             </Link>
-          </li>
 
-          <li>
             <Link
               className="nav-link"
               activeClassName="is-active"
@@ -56,14 +50,12 @@ const NavbarElement = () => {
             >
               Design | Space
             </Link>
-          </li>
 
-          <li>
             <Link className="nav-link" href="/Blogs">
               Blogs
             </Link>
-          </li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </nav>
   );
