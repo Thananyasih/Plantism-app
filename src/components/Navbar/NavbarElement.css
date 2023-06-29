@@ -28,9 +28,9 @@
 
 .nav-container a {
   text-decoration: none;
-  font-size: 150%;
+  font-size: 130%;
   margin: 10px;
-  top: 10px;
+  top: 15px;
   left: 20%;
   position: relative;
 }
