@@ -1,9 +1,14 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./NavbarElement.css";
 
 const NavbarElement = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const openHandler = () => {
+    setIsOpen(isOpen);
+  };
+
   return (
     <nav>
       <div className="nav-container">
@@ -12,48 +17,49 @@ const NavbarElement = () => {
         </div>
         <div className="link-wrapper">
           <ul>
-            <Link
-              className="active"
-              activeClassName="is-active"
+            <NavLink
               to="/"
-              onClick={() => setIsOpen(!isOpen)}
+              className={isOpen ? "active" : "nav-link"}
+              onClick={openHandler}
             >
               Home
-            </Link>
+            </NavLink>
 
-            <Link
-              className="nav-link"
-              activeClassName="is-active"
+            <NavLink
+              className={isOpen ? "active" : "nav-link"}
               to="/About"
               exact
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={openHandler}
             >
               About
-            </Link>
+            </NavLink>
 
-            <Link
-              className="nav-link"
-              activeClassName="is-active"
+            <NavLink
+              className={isOpen ? "active" : "nav-link"}
               to="/Plantalog"
               exact
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={openHandler}
             >
               Plantalog
-            </Link>
+            </NavLink>
 
-            <Link
-              className="nav-link"
-              activeClassName="is-active"
+            <NavLink
+              className={isOpen ? "active" : "nav-link"}
               to="/Design"
               exact
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={openHandler}
             >
               Design | Space
-            </Link>
+            </NavLink>
 
-            <Link className="nav-link" href="/Blogs">
+            <NavLink
+              className={isOpen ? "active" : "nav-link"}
+              to="/Blogs"
+              exact
+              onClick={openHandler}
+            >
               Blogs
-            </Link>
+            </NavLink>
           </ul>
         </div>
       </div>
