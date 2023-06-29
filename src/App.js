@@ -4,7 +4,7 @@ import NavbarElement from "./components/Navbar/NavbarElements";
 import mainLogo from "./img/mainLogo.png";
 import About from "./pages/about/about";
 import Home from "./pages/home/home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Plantalog from "./pages/plantalog/plantalog";
 import Design from "./pages/design/design";
 import Blogs from "./pages/blogs/blogs";
