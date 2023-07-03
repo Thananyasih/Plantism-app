@@ -10,15 +10,30 @@ const Home = () => {
   return (
     <div>
       <div className="home-container">
-        <h1>Create Nature Space</h1>
-        {/* <h3>- The place for Plantism -</h3> */}
+        <h1>Welcome To Plantism</h1>
+        <h3>Select the place for fast ideas !</h3>
       </div>
       <div className="img-container">
         {/* <img className="img-plant" src={homePlant01} alt="home01"></img> */}
-        <img className="img-plant" src={homePlant02} alt="home02"></img>
-        <img className="img-plant" src={homePlant03} alt="home03"></img>
-        <img className="img-plant" src={homePlant04} alt="home04"></img>
-        <img className="img-plant" src={homePlant05} alt="home05"></img>
+        <div className="gallery">
+          <img className="img-plant" src={homePlant02} alt="home02"></img>
+          <div className="desc">About home 01</div>
+        </div>
+
+        <div className="gallery">
+          <img className="img-plant" src={homePlant03} alt="home03"></img>
+          <div className="desc">About home 02</div>
+        </div>
+
+        <div className="gallery">
+          <img className="img-plant" src={homePlant04} alt="home04"></img>
+          <div className="desc">About home 03</div>
+        </div>
+
+        <div className="gallery">
+          <img className="img-plant" src={homePlant05} alt="home05"></img>
+          <div className="desc">About home 04</div>
+        </div>
       </div>
     </div>
   );
