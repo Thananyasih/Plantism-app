@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import NavbarElement from "./components/Navbar/NavbarElements";
-import mainLogo from "./img/mainLogo.png";
+import mainLogo from "./assets/mainLogo.png";
 import About from "./pages/about/about";
 import Home from "./pages/home/home";
 import { Route, Routes } from "react-router-dom";

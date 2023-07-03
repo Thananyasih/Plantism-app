@@ -1,5 +1,17 @@
+* {
+  margin: 0px;
+}
+
 .home-container {
-  position: relative;
+  position: absolute;
+  text-align: center;
+  top: 300px;
+  left: 300px;
+}
+
+.home-container h1 {
+  font-weight: 400px;
+  font-size: 40px;
 }
 
 .img-container {
