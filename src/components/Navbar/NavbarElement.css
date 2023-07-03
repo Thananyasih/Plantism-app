@@ -10,11 +10,11 @@
 }
 
 .head-logo {
-  font-size: 150%;
+  font-size: 130%;
   position: absolute;
   color: #000000;
   left: 90px;
-  top: 2px;
+  top: 5px;
 }
 
 .nav-container {
@@ -40,7 +40,7 @@
   font-weight: 600;
   background-color: #ffff;
   top: 20px;
-  padding: 5px 40px;
+  padding: 4px 40px;
   padding-bottom: 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -60,7 +60,7 @@
   top: 20px;
   left: 500px;
   position: absolute;
-  padding: 1px 40px;
+  padding: 4px 40px;
   padding-bottom: 20px;
   background-color: #ffff;
   font-weight: 600;
