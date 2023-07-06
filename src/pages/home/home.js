@@ -15,7 +15,12 @@ const Home = () => {
       </div>
       <div className="img-container">
         <div className="gallery">
-          <img className="img-plant" src={homePlant01} alt="home01"></img>
+          <img
+            className="img-plant"
+            src={homePlant01}
+            alt="home01"
+            style={{ height: "374.53px" }}
+          ></img>
           <div className="desc">Tips from Planter</div>
         </div>
         <div className="gallery">
