@@ -12,8 +12,6 @@ import Blogs from "./pages/blogs/blogs";
 function App() {
   return (
     <>
-      <NavbarElement />
-      <img className="web-logo" src={mainLogo} alt="logo" />
       <div className="App-header">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,6 +21,8 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
         </Routes>
       </div>
+      <NavbarElement />
+      <img className="web-logo" src={mainLogo} alt="logo" />
     </>
   );
 }

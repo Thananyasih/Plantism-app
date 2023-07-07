@@ -21,7 +21,7 @@
 .web-logo {
   /* background-color: rgb(255, 169, 169); */
   padding: 5px 10px;
-  position: absolute;
+  position: fixed;
   width: 40px;
   height: auto;
   top: 0px;
@@ -29,6 +29,6 @@
   margin: 10px;
   background-color: #fff;
   border-radius: 30%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
 }
