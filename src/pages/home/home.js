@@ -11,8 +11,7 @@ import famous2 from "../../assets/snakePlant.jpg";
 import famous3 from "../../assets/fiddleLeafFig.jpg";
 import famous4 from "../../assets/peachAirPlant.jpg";
 import famous5 from "../../assets/philodendronBrasil.jpg";
-import famous6 from "../../assets/stringOfPearls.jpg";
-import famous7 from "../../assets/stromanthe.jpg";
+import famous6 from "../../assets/stromanthe.jpg";
 
 const Home = () => {
   return (
@@ -57,17 +56,55 @@ const Home = () => {
       </div>
 
       <div className="content-container">
-        <p>Plants of the year 🔥</p>
+        <p>House Plants of the year ✨</p>
         <a href="/plantalog">Find more plants &rarr;</a>
       </div>
-      <div className="img-content-container">
+
+      <div className="img-famous-container">
         <a href="/" className="hot-plant">
           <img
-            className="famous-plant"
+            className="imgFamous-plant"
             src={famous1}
             alt="Monstera Deliciosa"
           />
-          <div className="desc">Monstera Deliciosa</div>
+          <div className="famous-desc">Monstera Deliciosa</div>
+        </a>
+
+        <a href="/" className="hot-plant">
+          <img className="imgFamous-plant" src={famous2} alt="Snake Plant" />
+          <div className="famous-desc">Snake Plant</div>
+        </a>
+
+        <a href="/" className="hot-plant">
+          <img
+            className="imgFamous-plant"
+            src={famous3}
+            alt="Fiddle Leaf Fig"
+          />
+          <div className="famous-desc">Fiddle Leaf Fig</div>
+        </a>
+
+        <a href="/" className="hot-plant">
+          <img
+            className="imgFamous-plant"
+            src={famous4}
+            alt="Peach Air Plant"
+          />
+          <div className="famous-desc">Peach Air Plant</div>
+        </a>
+
+        <a href="/" className="hot-plant">
+          <img
+            className="imgFamous-plant"
+            src={famous5}
+            alt="Philodendron Brasil"
+          />
+          <div className="famous-desc">Philodendron Brasil</div>
+        </a>
+
+        <a href="/" className="hot-plant">
+          <img className="imgFamous-plant" src={famous6} alt="Stromanthe" />
+          <div className="famous-desc">Stromanthe</div>
         </a>
       </div>
     </div>
