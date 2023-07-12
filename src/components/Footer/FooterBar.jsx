@@ -9,14 +9,16 @@ const FooterBar = () => {
       <div>
         <div className="footer-container">
           <h3 id="head">Plantism</h3>
-          <h4 id="madeBy">create by : Thananys S.</h4>
+          <h4 id="madeBy">Design & Develop : Thananys S.</h4>
           <div className="contact-container">
             <h3 id="contact">Contact</h3>
-            <li>E-mail :</li>
-            <li>GitHub :</li>
+            <li>E-mail : Thananya.sih@gmail.com</li>
+            <li>
+              GitHub : <a href="/">Thananya S.</a>
+            </li>
           </div>
+          <img src={mainLogo} alt="logo" className="img-logo" />
         </div>
-        <img src={mainLogo} alt="logo" className="img-logo" />
       </div>
     </div>
   );
