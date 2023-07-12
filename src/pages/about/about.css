@@ -1,6 +1,12 @@
-.about-container {
+/* .about-container {
   display: flex;
-  justify-content: right;
-  align-items: right;
+  align-items: center;
+  text-align: center;
   height: 100vh;
+} */
+
+.about-container {
+  position: absolute;
+  top: 100px;
+  left: 50px;
 }
