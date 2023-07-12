@@ -8,11 +8,13 @@ import { Route, Routes } from "react-router-dom";
 import Plantalog from "./pages/plantalog/plantalog";
 import Design from "./pages/design/design";
 import Blogs from "./pages/blogs/blogs";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
     <>
       <div className="App-header">
+        <Footer />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
