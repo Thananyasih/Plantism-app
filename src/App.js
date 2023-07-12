@@ -8,7 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Plantalog from "./pages/plantalog/plantalog";
 import Design from "./pages/design/design";
 import Blogs from "./pages/blogs/blogs";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/FooterBar";
 
 function App() {
   return (

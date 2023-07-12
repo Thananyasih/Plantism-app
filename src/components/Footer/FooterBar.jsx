@@ -1,9 +1,9 @@
 import React from "react";
-import "./Footer.css";
+import "./FooterBar.css";
 
 import mainLogo from "../../assets/mainLogo.png";
 
-const Footer = () => {
+const FooterBar = () => {
   return (
     <div>
       <div>
@@ -16,4 +16,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterBar;
