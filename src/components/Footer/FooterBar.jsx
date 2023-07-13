@@ -2,6 +2,8 @@ import React from "react";
 import "./FooterBar.css";
 
 import mainLogo from "../../assets/mainLogo.png";
+import githubLogo from "../../assets/github-mark.png";
+import emailLogo from "../../assets/gmail.png";
 
 const FooterBar = () => {
   return (
@@ -12,9 +14,14 @@ const FooterBar = () => {
           <h4 id="madeBy">Design & Develop : Thananys S.</h4>
           <div className="contact-container">
             <h3 id="contact">Contact</h3>
-            <li>E-mail : Thananya.sih@gmail.com</li>
+
             <li>
-              GitHub : <a href="/">Thananya S.</a>
+              <img src={emailLogo} alt="email Logo" className="email-logo" />
+              Thananya.sih@gmail.com
+            </li>
+            <li>
+              <img src={githubLogo} alt="github Logo" className="github-logo" />
+              <a href="https://github.com/Thananyasih">ThananyaSih</a>
             </li>
           </div>
           <img src={mainLogo} alt="logo" className="img-logo" />
