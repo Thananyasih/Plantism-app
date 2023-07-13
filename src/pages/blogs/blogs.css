@@ -7,11 +7,11 @@
 
 .top-blogs {
   position: absolute;
-  top: 100px;
-  left: 20px;
+  top: 80px;
+  right: 20px;
   width: 400px;
-  height: auto;
-  background-color: rgb(226, 234, 217, 0.8);
+  height: 900px;
+  background-color: rgb(226, 234, 217, 0.9);
   border-radius: 20px;
 }
 
@@ -19,7 +19,6 @@
   text-align: center;
   font-size: 25px;
   margin: 15px;
-  margin-top: 20px;
 }
 
 .pop-1,
@@ -35,6 +34,7 @@
   padding: 10px;
   margin-bottom: 20px;
   background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
