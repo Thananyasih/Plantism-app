@@ -16,6 +16,7 @@ import famous6 from "../../assets/stromanthe.jpg";
 const Home = () => {
   return (
     <div>
+      <div className="home-bg" />
       <div className="home-container">
         <h1>Welcome To Plantism</h1>
         <h3>Select the place for fast ideas !</h3>

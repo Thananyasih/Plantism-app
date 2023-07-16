@@ -5,13 +5,24 @@
 .home-container {
   position: relative;
   text-align: center;
-  top: 100px;
+  top: 120px;
   line-height: 40px;
+  scroll-behavior: smooth;
 }
 
 .home-container h1 {
   font-weight: 400px;
   font-size: 36px;
+}
+
+.home-bg {
+  position: fixed;
+  background-color: rgb(255, 169, 169, 0.5);
+  top: 50px;
+  left: 90px;
+  width: 100%;
+  height: 30px;
+  border-bottom-left-radius: 50px;
 }
 
 .img-container {

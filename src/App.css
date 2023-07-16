@@ -24,11 +24,12 @@
   position: fixed;
   width: 40px;
   height: auto;
-  top: 0px;
-  left: 10px;
-  margin: 10px;
+  top: 10px;
+  left: 20px;
+  /* margin: 10px; */
   background-color: #fff;
   border-radius: 30%;
   padding-bottom: 10px;
   padding-top: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }

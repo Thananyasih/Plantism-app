@@ -55,16 +55,16 @@
 
 .pop-button {
   position: static;
-  color: black;
+  color: rgb(146, 146, 146);
   appearance: none;
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(246, 246, 246);
   border-style: solid;
-  border-color: black;
+  border-color: rgb(120, 120, 120);
   border-width: 1px;
   border-radius: 10px;
   margin-left: 50px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   padding: 3px 40px;
 }
 
@@ -72,6 +72,7 @@
   background-color: rgb(255, 169, 169);
   font-weight: bold;
   transition: ease-out 0.2s;
+  color: black;
 }
 
 .img-fav {

@@ -43,8 +43,6 @@
   top: 20px;
   padding: 4px 40px;
   padding-bottom: 5px;
-  /* border-top-left-radius: 10px;
-  border-top-right-radius: 10px; */
   border-radius: 10px;
   transition: ease-in-out 0.3s;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);

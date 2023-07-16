@@ -1,25 +1,51 @@
-/* .about-container {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-} */
-
-.about-container {
-  position: absolute;
-  top: 100px;
-  left: 50px;
-  line-height: 30px;
+* {
+  margin: 0;
 }
 
-.about-container h1 {
+.about-container {
   position: relative;
   text-align: center;
   margin-bottom: 20px;
+  top: 50px;
+  scroll-behavior: smooth;
+}
+
+.about-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-container h2 {
+  position: relative;
+  text-align: left;
+  left: 40px;
+  margin-bottom: 5px;
 }
 
 .about-container h3 {
-  font-size: 20px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.img-aboutPlant {
+  position: relative;
+  width: auto;
+  height: 250px;
+  left: 15px;
+  filter: grayscale(100%);
+  margin-right: 20px;
+}
+
+.img-aboutPlant:hover {
+  left: 80px;
+  transition: ease-in-out 0.25s;
+  border-bottom-left-radius: 30px;
+  filter: grayscale(0%);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-bg {
+  position: fixed;
+  background-color: rgb(255, 169, 169, 0.5);
+  width: 100%;
+  height: 220px;
 }
