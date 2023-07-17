@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavbarElement.css";
+import SearchBar from "../SearchBar/SearchBar";
 
 const NavbarElement = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,9 @@ const NavbarElement = () => {
       <div className="nav-container">
         <div className="head-logo">
           <h1>PLANTISM</h1>
+        </div>
+        <div className="search-container">
+          <SearchBar />
         </div>
         <div className="link-wrapper">
           <ul>

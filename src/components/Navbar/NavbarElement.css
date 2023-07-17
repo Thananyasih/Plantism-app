@@ -27,6 +27,12 @@
   height: 50px;
 }
 
+.search-container {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
 .nav-container a {
   text-decoration: none;
   font-size: 130%;
