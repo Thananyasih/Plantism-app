@@ -4,3 +4,86 @@
   align-items: right;
   height: 100vh;
 }
+
+.top-blogs {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 400px;
+  height: 900px;
+  background-color: rgb(226, 234, 217, 0.9);
+  border-radius: 20px;
+}
+
+.top-blogs h1 {
+  text-align: center;
+  font-size: 25px;
+  margin: 15px;
+}
+
+.pop-1,
+.pop-2,
+.pop-3,
+.pop-4,
+.pop-5 {
+  position: relative;
+  align-items: center;
+  left: 15px;
+  width: 350px;
+  height: 120px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.pop-li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.pop-desc {
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.pop-button {
+  position: static;
+  color: rgb(146, 146, 146);
+  appearance: none;
+  cursor: pointer;
+  background-color: rgb(246, 246, 246);
+  border-style: solid;
+  border-color: rgb(120, 120, 120);
+  border-width: 1px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-bottom: 1px;
+  padding: 3px 40px;
+}
+
+.pop-button:hover {
+  background-color: rgb(255, 169, 169);
+  font-weight: bold;
+  transition: ease-out 0.2s;
+  color: black;
+}
+
+.img-fav {
+  top: 35px;
+  width: 60px;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  left: 270px;
+  opacity: 100%;
+  border-width: 2px;
+  border-style: dotted;
+  border-radius: 50%;
+}

@@ -5,7 +5,7 @@ const Design = () => {
   return (
     <div>
       <div className="design-container">
-        <h1>Design Space</h1>
+        <h1>Design Ideas</h1>
       </div>
     </div>
   );
