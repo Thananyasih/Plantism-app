@@ -12,13 +12,14 @@ const NavbarElement = () => {
 
   return (
     <nav>
+      <div className="search-container">
+        <SearchBar />
+      </div>
       <div className="nav-container">
         <div className="head-logo">
           <h1>PLANTISM</h1>
         </div>
-        <div className="search-container">
-          <SearchBar />
-        </div>
+
         <div className="link-wrapper">
           <ul>
             <NavLink
