@@ -54,6 +54,8 @@
 }
 
 .pop-button {
+  font-size: 14px;
+  text-decoration: none;
   position: static;
   color: rgb(146, 146, 146);
   appearance: none;

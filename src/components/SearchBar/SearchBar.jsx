@@ -1,28 +1,22 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./SearchBar.css";
 import List from "../Data/List";
 
 const SearchBar = (props) => {
-  const ref = useRef(null);
-  const { onClickOutside } = props;
-
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (ref.current && !ref.current.contains(e.target)) {
-        onClickOutside && onClickOutside();
-      }
-    };
-  });
-
   const [isOpen, setIsOpen] = useState(false);
+
   const openHandler = (e) => {
-    setIsOpen((isOpen) => !isOpen);
+    setIsOpen(!isOpen);
   };
 
   const [inputText, setInputText] = useState("");
   let inputHandler = (e) => {
     var lowerCase = e.target.value.toLowerCase();
     setInputText(lowerCase);
+
+    if (inputText) {
+      setIsOpen(!isOpen) && <List style={{ display: "none" }} />;
+    }
   };
 
   return (
@@ -35,7 +29,7 @@ const SearchBar = (props) => {
           onChange={inputHandler}
           onClick={openHandler}
         />
-        {!isOpen ? "" : <List input={inputText} />}
+        {isOpen ? <List input={inputText} /> : ""}
       </div>
     </div>
   );

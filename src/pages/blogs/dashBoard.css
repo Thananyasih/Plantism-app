@@ -1,0 +1,30 @@
+.head-board {
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.head-board h1 {
+  font-size: 26px;
+}
+
+.board-container {
+  position: absolute;
+  top: 120px;
+  left: 80px;
+}
+
+.card-container {
+  position: absolute;
+  width: 900px;
+  height: 850px;
+  /* background-color: rgb(0, 0, 0); */
+  background-color: transparent;
+  border-radius: 20px;
+  border-color: rgb(0, 0, 0, 0.3);
+  border-style: dotted;
+  border-width: 2px;
+}

@@ -6,11 +6,14 @@
   /* border: 1px solid rgb(163, 180, 145); */
   background-color: rgb(255, 255, 255, 0.7);
   border-radius: 10px;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 #typeInput:focus {
-  padding: 1px 45px;
   outline: none;
+}
+#typeInput:hover {
+  padding: 1px 45px;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
   background-color: rgb(255, 255, 255, 0.8);
   transition: ease-in-out 0.3s;
@@ -35,7 +38,7 @@
   display: none;
   position: relative;
   right: 5px;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.9);
   min-width: 195px;
   border: 1px solid rgb(163, 180, 145, 0.5);
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
