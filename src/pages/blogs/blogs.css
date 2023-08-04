@@ -13,6 +13,7 @@
   height: 900px;
   background-color: rgb(226, 234, 217, 0.9);
   border-radius: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .top-blogs h1 {

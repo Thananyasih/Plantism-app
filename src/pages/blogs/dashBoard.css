@@ -1,9 +1,12 @@
 .head-board {
   position: absolute;
   top: -30px;
-  left: 100px;
-  background-color: rgb(255, 255, 255, 0.9);
-  padding: 5px 10px;
+  left: 30px;
+  background-color: rgb(226, 234, 217, 0.9);
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+  padding: 2px 20px;
   border-radius: 10px;
   text-align: center;
 }
@@ -13,7 +16,7 @@
 
 .board-container {
   position: absolute;
-  top: 120px;
+  top: 125px;
   left: 80px;
 }
 
@@ -27,4 +30,66 @@
   border-color: rgb(0, 0, 0, 0.3);
   border-style: dotted;
   border-width: 2px;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.card-user {
+  display: flexbox;
+  position: absolute;
+  margin: 40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgb(226, 234, 217, 0.9);
+  border-style: dotted;
+  border-color: rgb(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.user-01 {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  margin: 10px;
+  width: 150px;
+  height: auto;
+}
+.user-01:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-user:hover {
+  border-radius: 50%;
+  background-color: rgb(255, 169, 169, 0.5);
+
+  margin-bottom: 100px;
+  transition: 0.2s;
+}
+.card-1 {
+  position: absolute;
+  /* margin: 15px; */
+  top: 10px;
+  width: 760px;
+  left: 50px;
+  height: 160px;
+  background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+}
+
+.card-2 {
+  position: absolute;
+  margin: 15px;
+  top: 250px;
+  width: 760px;
+  right: 0px;
+  height: 150px;
+  background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-1 h2 {
+  margin-left: 150px;
 }

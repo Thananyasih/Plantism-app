@@ -9,10 +9,28 @@ const DashBoard = () => {
       <div className="board-container">
         <div className="card-container">
           <div className="head-board">
-            <h1>Plantism Boards</h1>
+            <h1>Plantism Tips</h1>
           </div>
-          <div className="card-1"></div>
-          <div>User - 1</div>
+
+          <div className="card-user">
+            <img
+              className="user-01"
+              src="https://cdn.sanity.io/images/y346iw48/production/1d50eea7fd63e6f707e2a71b1f7bc44e02717e3c-336x336.png?w=200&auto=format"
+              alt="plantism 1"
+            />
+            <div className="card-1">
+              <h2>user - 01</h2>
+            </div>
+
+            <img
+              className="user-01"
+              src="https://cdn.sanity.io/images/y346iw48/production/1d50eea7fd63e6f707e2a71b1f7bc44e02717e3c-336x336.png?w=200&auto=format"
+              alt="plantism 1"
+            />
+            <div className="card-2">
+              <h2>user - 01</h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
