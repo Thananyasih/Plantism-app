@@ -27,6 +27,8 @@
 
 .img-container {
   position: absolute;
+  text-align: center;
+  align-items: center;
   top: 220px;
   left: 50px;
   display: flex;
@@ -87,7 +89,7 @@
 
 .content-container a {
   position: absolute;
-  right: 60px;
+  left: 1200px;
   top: 675px;
   font-size: 1.8rem;
   font-weight: bold;
