@@ -11,7 +11,7 @@ const FooterBar = () => {
       <div>
         <div className="footer-container">
           <h3 id="head">Plantism</h3>
-          <h4 id="madeBy">Design & Develop : Thananys S.</h4>
+          <h4 id="madeBy">Design & Develop : Thananya S.</h4>
           <div className="contact-container">
             <h3 id="contact">Contact</h3>
 
