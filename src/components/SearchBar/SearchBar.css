@@ -1,9 +1,9 @@
-#typeInput {
+/* #typeInput {
   box-sizing: border-box;
   font-size: 16px;
   padding: 1px 35px;
   border: none;
-  /* border: 1px solid rgb(163, 180, 145); */
+
   background-color: rgb(255, 255, 255, 0.7);
   border-radius: 10px;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
@@ -61,9 +61,36 @@
   border-style: dotted;
   border-color: rgb(163, 180, 145);
   border-radius: 5px;
-  /* width: 100%; */
 }
 
 .show {
   display: block;
+} */
+
+.input-wrapper {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  height: 2rem;
+  padding: 0 15px;
+  box-shadow: 0px 0px 8px #ddd;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1rem;
+  width: 100%;
+  margin-left: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-icon {
+  color: rgb(163, 180, 145);
 }

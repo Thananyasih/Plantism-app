@@ -1,36 +1,23 @@
+// key: sk-PmRY64d7a7e30c48c1856
+
 import React, { useState } from "react";
 import "./SearchBar.css";
-import List from "../Data/List";
+import { FaSearch } from "react-icons/fa";
 
-const SearchBar = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+const SearchBar = ({ setResults }) => {
+  const [input, setInput] = useState("");
 
-  const openHandler = (e) => {
-    setIsOpen(!isOpen);
+  const handleChange = (value) => {
+    setInput(value);
   };
-
-  const [inputText, setInputText] = useState("");
-  let inputHandler = (e) => {
-    var lowerCase = e.target.value.toLowerCase();
-    setInputText(lowerCase);
-
-    if (inputText) {
-      setIsOpen(!isOpen) && <List style={{ display: "none" }} />;
-    }
-  };
-
   return (
-    <div>
-      <div id="dropdown" className="dropdown-content">
-        <input
-          type="text"
-          placeholder="Search..."
-          id="typeInput"
-          onChange={inputHandler}
-          onClick={openHandler}
-        />
-        {isOpen ? <List input={inputText} /> : ""}
-      </div>
+    <div className="input-wrapper">
+      <FaSearch id="search-icon" />
+      <input
+        placeholder="Type to search..."
+        value={input}
+        onChange={(e) => handleChange(e.target.value)}
+      />
     </div>
   );
 };

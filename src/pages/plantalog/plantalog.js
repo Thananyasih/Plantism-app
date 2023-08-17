@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./plantalog.css";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 const Plantalog = () => {
+  const [results, setResults] = useState([]);
+
   return (
     <div>
-      <div className="plantalog-container">
-        <h1>Plantalog Page</h1>
+      <div>filter</div>
+      <div className="search-bar-container">
+        <SearchBar setResults={setResults} />
+        <div>SearchResult</div>
       </div>
     </div>
   );
