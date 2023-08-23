@@ -1,11 +1,12 @@
 import React from "react";
 import "./SearchResultsList.css";
+import { SearchResult } from "./SearchResult";
 
 export const SearchResultsList = ({ results }) => {
   return (
     <div className="results-list">
       {results.map((result, id) => {
-        return <div key={id}>{result.data.common_name}</div>;
+        return <SearchResult result={result.common_name} key={id} />;
       })}
     </div>
   );
