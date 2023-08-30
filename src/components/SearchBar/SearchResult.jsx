@@ -6,7 +6,8 @@ export const SearchResult = ({ result }) => {
       className="serach-result"
       onClick={(e) => alert(`You Selected ${result}!`)}
     >
-      {result}
+      <h1>Name: <span id="common_name"></span></h1>
+
     </div>
   );
 };

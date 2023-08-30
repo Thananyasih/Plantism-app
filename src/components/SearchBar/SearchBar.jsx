@@ -5,10 +5,11 @@ import { FaSearch } from "react-icons/fa";
 import Axios from "axios";
 
 import "./SearchBar.css";
-import { json } from "react-router-dom";
+// import { json } from "react-router-dom";
 
 const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState("");
+  
   const fetchData = (value) => {
     // fetch(
     //   "https://perenual.com/api/species-list?page=1&key=sk-PmRY64d7a7e30c48c1856"
@@ -21,7 +22,7 @@ const SearchBar = ({ setResults }) => {
     Axios.get(
       "https://perenual.com/api/species-list?page=1&key=sk-PmRY64d7a7e30c48c1856"
     ).then((res) => {
-      console.log(res.data);
+      console.log(res.data.data);
     });
   };
 
