@@ -26,7 +26,10 @@ const About = () => {
         <h1>About Plantism</h1>
         <h2>Why Plantism ?</h2>
         <h3>
-        This web page is a collection for planters who aim to find plant breeds, how to take care of them, and tips from the Plantism community. They can also try their ideas on the "Design and Space page" to create and plan their own styles.
+        This web page is a collection for planters 
+        who aim to find plant breeds, how to take care of them, 
+        and tips from the Plantism community. 
+        They can also try their ideas on the "Design and Space page" to create and plan their own styles.
         </h3>
         <p />
         <h2>How to use Plantism ?</h2>

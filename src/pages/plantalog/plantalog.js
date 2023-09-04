@@ -7,14 +7,18 @@ const Plantalog = () => {
   const [results, setResults] = useState([]);
 
   return (
-    <div>
-      <div>filter</div>
+    <div >
+      <div className="plantalog-container">
+      <h2>Search Plants...</h2>
+      </div>
       <div className="search-bar-container">
         <SearchBar setResults={setResults} />
         {results && results.length > 0 && (
           <SearchResultsList results={results} />
         )}
       </div>
+      <h3>Filter Plants</h3>
+
     </div>
   );
 };
