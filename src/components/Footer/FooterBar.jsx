@@ -17,10 +17,11 @@ const FooterBar = () => {
 
             <li>
               <img src={emailLogo} alt="email Logo" className="email-logo" />
-              Thananya.sih@gmail.com
+              <a href="https://github.com/Thananyasih">Thananya.sih@gmail.com</a>
+              
             </li>
             <li>
-              <img src={githubLogo} alt="github Logo" className="github-logo" />
+              <img src={githubLogo} alt="github Logo" href="https://github.com/Thananyasih"className="github-logo" />
               <a href="https://github.com/Thananyasih">ThananyaSih</a>
             </li>
           </div>

@@ -5,7 +5,7 @@ const Plantalog = () => {
 
   return (
     <div className="wrapper">
-      <SearchBar></SearchBar>
+      <SearchBar/>
     </div>
   )
 };

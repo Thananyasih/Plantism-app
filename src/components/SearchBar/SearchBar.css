@@ -24,10 +24,9 @@
 input:focus {
   outline: none;
   transition: ease-in 0.1s;
-
   border-color: rgb(163, 180, 145);
   border-width: 2px;
-  font-weight: bold;
+  color: black;
 }
 
 
