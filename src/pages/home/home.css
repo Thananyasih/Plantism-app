@@ -1,13 +1,13 @@
 * {
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 .home-container {
   position: relative;
   text-align: center;
-  top: 120px;
+  top: 110px;
   line-height: 40px;
-  scroll-behavior: smooth;
 }
 
 .home-container h1 {
@@ -78,7 +78,7 @@
   transition: padding 0.5s;
 }
 
-.content-container p {
+.content-container p{
   position: absolute;
   left: 50px;
   top: 670px;
@@ -87,10 +87,20 @@
   line-height: 30px;
 }
 
+.content-container h3 {
+  position: absolute;
+  left: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  top: 700px;
+  color: rgb(120, 120, 120);
+
+}
+
 .content-container a {
   position: absolute;
   left: 1200px;
-  top: 675px;
+  top: 700px;
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -106,7 +116,7 @@
 
 .img-famous-container {
   position: absolute;
-  top: 740px;
+  top: 750px;
   left: 50px;
   display: flex;
   flex-direction: row;

@@ -58,11 +58,12 @@ const Home = () => {
 
       <div className="content-container">
         <p>House Plants of the year ✨</p>
+        <h3>{'['} Full information {']'}</h3>
         <a href="/plantalog">Find more plants &rarr;</a>
       </div>
 
       <div className="img-famous-container">
-        <a href="/" className="hot-plant">
+        <a href="https://en.wikipedia.org/wiki/Monstera_deliciosa" className="hot-plant">
           <img
             className="imgFamous-plant"
             src={famous1}
@@ -71,12 +72,12 @@ const Home = () => {
           <div className="famous-desc">Monstera Deliciosa</div>
         </a>
 
-        <a href="/" className="hot-plant">
+        <a href="https://en.wikipedia.org/wiki/Dracaena_trifasciata" className="hot-plant">
           <img className="imgFamous-plant" src={famous2} alt="Snake Plant" />
           <div className="famous-desc">Snake Plant</div>
         </a>
 
-        <a href="/" className="hot-plant">
+        <a href="https://en.wikipedia.org/wiki/Ficus_lyrata" className="hot-plant">
           <img
             className="imgFamous-plant"
             src={famous3}
@@ -85,7 +86,7 @@ const Home = () => {
           <div className="famous-desc">Fiddle Leaf Fig</div>
         </a>
 
-        <a href="/" className="hot-plant">
+        <a href="https://hemleva.com/blogs/news/tillandsia-capitata-peach-air-plant" className="hot-plant">
           <img
             className="imgFamous-plant"
             src={famous4}
@@ -94,7 +95,7 @@ const Home = () => {
           <div className="famous-desc">Peach Air Plant</div>
         </a>
 
-        <a href="/" className="hot-plant">
+        <a href="https://en.wikipedia.org/wiki/Philodendron_hederaceum" className="hot-plant">
           <img
             className="imgFamous-plant"
             src={famous5}
@@ -103,7 +104,7 @@ const Home = () => {
           <div className="famous-desc">Philodendron Brasil</div>
         </a>
 
-        <a href="/" className="hot-plant">
+        <a href="https://en.wikipedia.org/wiki/Stromanthe_sanguinea" className="hot-plant">
           <img className="imgFamous-plant" src={famous6} alt="Stromanthe" />
           <div className="famous-desc">Stromanthe</div>
         </a>

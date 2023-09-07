@@ -23,10 +23,19 @@
 
 .about-container h3 {
   text-align: left;
-padding: 0 100px;
-margin-right: 10px;
+  padding: 0px 100px;
+  margin-right: 10px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+.about-container ul {
+  text-align: left;
+  padding: 0px 100px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  list-style-type: none;;
 }
 
 .img-aboutPlant {
@@ -39,9 +48,9 @@ margin-right: 10px;
 }
 
 .img-aboutPlant:hover {
-  left: 80px;
-  transition: ease-in-out 0.25s;
   border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+transition: 0.2s;
   filter: grayscale(0%);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }

@@ -33,6 +33,9 @@ const About = () => {
         </h3>
         <p />
         <h2>How to use Plantism ?</h2>
+        <ul>
+          <li>Searching for the right plant for your space.</li>
+        </ul>
       </div>
     </div>
   );
