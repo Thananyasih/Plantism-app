@@ -77,7 +77,13 @@ input:focus {
   color: black;
   position: relative;
   text-align: center;
-  top: 20px;
+  top: 50px;
   font-size: 20px;
   font-weight: bold;
+}
+
+.search-result-head h3 {
+  font-size: 18px;
+  font-weight: 200;
+
 }

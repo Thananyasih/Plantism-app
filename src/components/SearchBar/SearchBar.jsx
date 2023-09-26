@@ -12,7 +12,7 @@ const SearchBar = () => {
   const [search, setSearch] = useState('')
   const [plantList, setPlantList] = useState([]);
   const [isClicked, setIsClicked] = useState(false);
-  const [headChange, setHeadChange] = useState('')
+  const [selects, setSelects] = useState([])
 
   useEffect(() => {
     axios.get('https://perenual.com/api/species-list?&key=sk-7psF64f8528c3e1441856')
@@ -24,9 +24,6 @@ const SearchBar = () => {
   const handleClicked = (e) => {
     e.preventDefault();
     setIsClicked(isClicked => !isClicked);
-    if(!isClicked) (
-      <div className="search-result-head" style={{color: 'red'}}>This is {search.e.target.value} details!</div>
-    );
   }
 
   return (  
@@ -34,24 +31,33 @@ const SearchBar = () => {
         <div className="search" >
             {<FaSearch id="search-icon" />}
           <div>
+           
             <input
               type="text"
               placeholder="Search Plants Here..."
               onChange={(e) => setSearch(e.target.value)}            
               />
             <div className="search-result-container">
+              
               {plantList.map((item) => {
                 return search === '' ? 
-                <div key={item.id} className='search-result' style={{display:'none'}}/> 
+                <div key={item.id} className='search-result' style={{display:'none'}} /> 
                  : item.common_name.toLowerCase().startsWith(search.toLowerCase()) ? (                    
                       <div key={item.id}>
                         <div onClick={handleClicked} className='search-result'>{item.common_name}</div>                                        
                       </div>                   
                       ) : ''
+
                 }               
               )}
             </div>
-            <div className="search-result-head" onChange={(e) => setHeadChange(e.target.value)}>This is {search} details!</div>
+            {plantList.map((item) => {
+              return  selects === '' ? '' : !isClicked ? <div>
+              <div key={item.id} className="search-result-head" onChange={(e) => setSelects(e.target.value)}>This is {item.common_name} details!</div>
+              <h3 key={item.id} className="search-result-head">Watering : {item.watering}</h3>
+              </div> : ''
+            }
+            )}
           </div>             
           
         </div>
