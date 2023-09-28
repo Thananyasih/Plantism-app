@@ -17,7 +17,7 @@ const FooterBar = () => {
 
             <li>
               <img src={emailLogo} alt="email Logo" className="email-logo" />
-              <a href="https://github.com/Thananyasih">Thananya.sih@gmail.com</a>
+              <a href="mailto:thananya.sih@gmail.com">Thananya.sih@gmail.com</a>
               
             </li>
             <li>
