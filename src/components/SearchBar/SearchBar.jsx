@@ -5,26 +5,29 @@ import { FaSearch } from "react-icons/fa";
 import "./SearchBar.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import PlantsCard from "./PlantsCard";
+
 
 
 const SearchBar = () => {
 
   const [search, setSearch] = useState('')
-  const [plantList, setPlantList] = useState([]);
-  const [isClicked, setIsClicked] = useState(false);
-  const [selects, setSelects] = useState([])
+  const [plantSearch, setPlantSearch] = useState([]);
+  // const [isClicked, setIsClicked] = useState(false);
+  // const [selected, setSelected] = useState([])
 
   useEffect(() => {
     axios.get('https://perenual.com/api/species-list?&key=sk-7psF64f8528c3e1441856')
     .then((res) => {
-      setPlantList(res.data.data)
+      setPlantSearch(res.data.data)
     })
   },[search])   
 
-  const handleClicked = (e) => {
-    e.preventDefault();
-    setIsClicked(isClicked => !isClicked);
-  }
+
+  // const handleClicked = (e) => {
+  //   e.preventDefault();
+  //   setIsClicked(isClicked => !isClicked);
+  // }
 
   return (  
     <div className="search-top">
@@ -39,27 +42,20 @@ const SearchBar = () => {
               />
             <div className="search-result-container">
               
-              {plantList.map((item) => {
+              {plantSearch.map((item) => {
                 return search === '' ? 
                 <div key={item.id} className='search-result' style={{display:'none'}} /> 
                  : item.common_name.toLowerCase().startsWith(search.toLowerCase()) ? (                    
                       <div key={item.id}>
-                        <div onClick={handleClicked} className='search-result'>{item.common_name}</div>                                        
+                        <div className='search-result'>{item.common_name}</div>                                        
                       </div>                   
                       ) : ''
-
                 }               
               )}
             </div>
-            {plantList.map((item) => {
-              return  selects === '' ? '': isClicked ? <div>
-              <div key={item.id} className="search-result-head" onChange={(e) => setSelects(e.target.value)}>This is {item.common_name} details!</div>
-              </div> : ''
-            }
-            )}
-          </div>             
-          
+          </div> 
         </div>
+        
         <div>
             <h2>Indoor Plant Recommended</h2>
           </div>
