@@ -19,7 +19,7 @@ const Home = () => {
       <div className="home-bg" />
       <div className="home-container">
         <h1>Welcome To Plantism</h1>
-        <h3>Select the place for fast ideas !</h3>
+        <h3>Select the card for fast ideas !</h3>
       </div>
 
       <div className="img-container">

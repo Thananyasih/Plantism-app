@@ -52,9 +52,8 @@ const SearchBar = () => {
               )}
             </div>
             {plantList.map((item) => {
-              return  selects === '' ? '' : !isClicked ? <div>
+              return  selects === '' ? '': isClicked ? <div>
               <div key={item.id} className="search-result-head" onChange={(e) => setSelects(e.target.value)}>This is {item.common_name} details!</div>
-              <h3 key={item.id} className="search-result-head">Watering : {item.watering}</h3>
               </div> : ''
             }
             )}

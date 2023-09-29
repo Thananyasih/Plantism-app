@@ -44,15 +44,17 @@
 .card-user03,
 .card-user04,
 .card-user05 {
-  width: 150px;
-  height: 150px;
+  
+  width: 147px;
+  height: 145px;
   border-radius: 50%;
   /* background-color: rgb(226, 234, 217, 0.9); */
   background-color: rgb(255, 169, 169, 0.5);
   border-style: dotted;
   border-color: rgb(0, 0, 0, 0.5);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin-top: 1px;
+  margin-bottom: 27px;
 }
 
 .user-01,
@@ -69,13 +71,13 @@
   width: 120px;
   height: 120px;
 }
-.user-01:hover,
+/* .user-01:hover,
 .user-02:hover,
 .user-03:hover,
 .user-04:hover,
 .user-05:hover {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .user-02 {
   top: 175px;
@@ -135,7 +137,7 @@
   color: black;
   text-decoration: none;
   left: 150px;
-  top: 12px;
+  top: 15px;
   font-size: 20px;
 }
 .card-1 a:hover,
@@ -152,7 +154,7 @@
 .card-3 h3,
 .card-4 h3,
 .card-5 h3 {
-  top: 35px;
+  top: 37px;
   position: relative;
   font-size: 15px;
   padding: 10px 100px;
