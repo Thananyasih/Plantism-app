@@ -37,22 +37,22 @@ const Home = () => {
         </a>
         <a href="/plantalog" className="gallery">
           <img className="img-plant" src={homePlant02} alt="home02" />
-          <div className="desc">Plant Styles</div>
+          <div className="desc">Plant Searching</div>
         </a>
 
         <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant03} alt="home03" />
-          <div className="desc">Outdoor Plants</div>
+          <div className="desc">Outdoor Space</div>
         </a>
 
         <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant04} alt="home04" />
-          <div className="desc">Indoor Plants</div>
+          <div className="desc">Indoor Space</div>
         </a>
 
         <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant05} alt="home05" />
-          <div className="desc">Customize Own Space</div>
+          <div className="desc">Your Favourite Plants</div>
         </a>
       </div>
 
