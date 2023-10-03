@@ -52,6 +52,7 @@ input:focus {
   text-align: left; 
   overflow-y: scroll;
   max-height: 155px;
+  
 
 }
 
@@ -63,7 +64,7 @@ input:focus {
   border-width: 0.2px;
   /* box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1); */
   background-color:rgba(255, 255, 255, 0.501);
-
+  margin-bottom: 20px;
 
 }
 
@@ -73,13 +74,10 @@ input:focus {
   cursor: pointer;
 }
 
-.search-result-head {
-  color: black;
-  position: relative;
-  text-align: center;
-  top: 50px;
-  font-size: 20px;
-  font-weight: bold;
+.plant-cards {
+  margin-top: 50px;
+  display: flexbox;
+  flex-direction: column;
 }
 
 .search-result-head h3 {
