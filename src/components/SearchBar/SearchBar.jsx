@@ -14,7 +14,7 @@ const SearchBar = () => {
 
   const [search, setSearch] = useState('')
   // const [plantSearch, setPlantSearch] = useState([]);
-  // const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const [testData, setTestData] = useState([]);
 
   // useEffect(() => {
@@ -56,7 +56,9 @@ const filtered = !search ? testData : testData.filter((item) => (
 //   item.common_name.toLowerCase().startsWith(search.toLowerCase())
 // ))
 
-
+const handleClicked = (e) => {
+  setIsClicked(isClicked => !isClicked)
+}
   
   return (  
     <div className="search-top">
@@ -87,8 +89,9 @@ const filtered = !search ? testData : testData.filter((item) => (
                 return search === '' ? 
                 <div key={item.id} className="search-result-container" style={{display:'none'}} /> 
                  : (  <div key={item.id}>
-                        {/* <div className="search-result" onClick={handleClicked}>{item.common_name}</div>                                         */}
-                        <ul className="plant-cards">
+                        <div className="search-result" onClick={handleClicked}>{item.common_name}</div> 
+
+                        {!isClicked ? (<ul className="plant-cards">
                           <img src={item.default_image.regular_url
 } alt={item.common_name} style={{width:'400px', height: 'auto'}}/>
                           <p>
@@ -97,7 +100,7 @@ const filtered = !search ? testData : testData.filter((item) => (
                             <h3>Cycle: {item.cycle}</h3>
                             <h3>Watering: {item.watering}</h3>
                           </p>
-                        </ul>                   
+                        </ul>) : ''}                   
                       </div>
                       )
                 }               
