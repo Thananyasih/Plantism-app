@@ -1,7 +1,7 @@
 // key: sk-7psF64f8528c3e1441856
 // "https://perenual.com/api/species-list?page=1&key=sk-7psF64f8528c3e1441856"
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { FaSearch } from "react-icons/fa";
 // import axios from "axios";
@@ -14,14 +14,13 @@ const SearchBar = () => {
 
   const [search, setSearch] = useState('')
   // const [plantSearch, setPlantSearch] = useState([]);
-  const [isClicked, setIsClicked] = useState(false);
+  const [isOpened, setIsOpened] = useState(false);
   const [testData, setTestData] = useState([]);
 
   // useEffect(() => {
   //   axios.get('https://perenual.com/api/species-list?&key=sk-7psF64f8528c3e1441856')
   //   .then((res) => {
   //     setPlantSearch(res.data.data)
-  // console.log(plantSearch);
   //   })
   // },[search])
 
@@ -52,12 +51,18 @@ const filtered = !search ? testData : testData.filter((item) => (
   item.common_name.toLowerCase().startsWith(search.toLowerCase())
 ))
 
+
+
+
 // const filtered = !search ? plantSearch : plantSearch.filter((item) => (
 //   item.common_name.toLowerCase().startsWith(search.toLowerCase())
 // ))
 
+const ref = useRef(null);
+
 const handleClicked = (e) => {
-  setIsClicked(isClicked => !isClicked)
+  console.log(ref);
+  setIsOpened(isOpened => !isOpened)
 }
   
   return (  
@@ -72,42 +77,35 @@ const handleClicked = (e) => {
               placeholder="Search Plants Here..."
               onChange={(e) => setSearch(e.target.value)}            
               />
-            <div >
-              
-              {/* {plantSearch.map((item) => {
-                return search === '' ? 
-                <div key={item.id} className='search-result' style={{display:'none'}} /> 
-                 : item.common_name.toLowerCase().startsWith(search.toLowerCase()) ? (                    
-                      <div key={item.id}>
-                        <div className='search-result' onClick={(e)=>{setSelected(e.target.value)}}>{item.common_name}</div>                                        
-                      </div>                   
-                      ) : ''
-                }               
-              )} */}
+            <div className="search-result-container"> 
 
               {filtered.map((item) => {
                 return search === '' ? 
-                <div key={item.id} className="search-result-container" style={{display:'none'}} /> 
+                <div key={item.id} style={{display:'none'}} /> 
                  : (  <div key={item.id}>
-                        <div className="search-result" onClick={handleClicked}>{item.common_name}</div> 
-
-                        {!isClicked ? (<ul className="plant-cards">
-                          <img src={item.default_image.regular_url
-} alt={item.common_name} style={{width:'400px', height: 'auto'}}/>
-                          <p>
-                            <h2>{item.common_name}</h2>
-                            <h3>Scientific Name: {item.scientific_name}</h3>
-                            <h3>Cycle: {item.cycle}</h3>
-                            <h3>Watering: {item.watering}</h3>
-                          </p>
-                        </ul>) : ''}                   
+                        <div className="search-result" id={item.id} ref={ref} onClick={handleClicked}>{item.common_name}</div> 
                       </div>
                       )
                 }               
               )}
+              
             </div>
+
+            
           </div> 
-        </div>        
+        </div>     
+        {isOpened && filtered.map((item) => (
+          <ul key={item.id} className="plant-cards" style={{display: 'block'}}>
+                          <img key={item.id} src={item.default_image.regular_url
+} alt={item.common_name} style={{width:'300px', height: 'auto'}}/>
+                          <ul>
+                            <h2>{item.common_name}</h2>
+                            <h3><b>Scientific Name:</b> {item.scientific_name}</h3>
+                            <h3><b>Cycle:</b> {item.cycle}</h3>
+                            <h3><b>Watering:</b> {item.watering}</h3>
+                          </ul>
+                        </ul> 
+                        ))}
     </div>
   )
 };

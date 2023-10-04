@@ -5,8 +5,8 @@
 .search{
   display: flex;
   position: fixed;
-  top: 80px;
-  left: 400px;
+  top: 70px;
+  left: 100px;
 }
 
 .search input {
@@ -51,8 +51,7 @@ input:focus {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
   text-align: left; 
   overflow-y: scroll;
-  max-height: 155px;
-  
+  max-height: 95px;
 
 }
 
@@ -64,8 +63,8 @@ input:focus {
   border-width: 0.2px;
   /* box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1); */
   background-color:rgba(255, 255, 255, 0.501);
-  
-  margin-top: 10px;
+  display: flexbox;
+  /* margin-top: 5px; */
 }
 
 .search-result:hover {
@@ -75,20 +74,35 @@ input:focus {
 }
 
 .plant-cards {
-  margin-top: 20px;
-  position: absolute;
-  left: 100px;
+  display: none;
+  margin-top: 230px;
+  margin-bottom: 20px;
+  position: fixed;
+  left: 250px;
   display: flexbox;
   flex-direction: column;
+  width: 300px;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.1);
 }
+
+ul{
+  padding-inline-start: 0px;
+}
+
 .plant-cards h2 {
   text-align: center;
   background-color: rgb(163, 180, 145,0.7);
   margin-bottom: 5px;
+  width: 300px;
 }
 
 .plant-cards h3 {
   font-size: 18px;
   font-weight: 200;
-line-height: 25px;
+line-height: 30px;
+padding-left: 10px;
+}
+
+.plant-cards h3:last-child {
+  margin-bottom: 10px;
 }
