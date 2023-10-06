@@ -5,8 +5,9 @@
 .search{
   display: flex;
   position: fixed;
-  top: 70px;
-  left: 100px;
+  top: 100px;
+  left: 400px;
+  
 }
 
 .search input {
@@ -19,6 +20,7 @@
   border-color: #ffffff;
   text-align: center;
   box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 input:focus {
@@ -75,14 +77,23 @@ input:focus {
 
 .plant-cards {
   display: none;
-  margin-top: 230px;
+  /* margin-top: 200px; */
   margin-bottom: 20px;
-  position: fixed;
-  left: 250px;
+  margin-right: 20px;
+  position: relative;
+  left: 0px;
   display: flexbox;
-  flex-direction: column;
+  flex-direction: row;
   width: 300px;
   box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant-cards-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 200px;
+
 }
 
 ul{
@@ -99,10 +110,15 @@ ul{
 .plant-cards h3 {
   font-size: 18px;
   font-weight: 200;
-line-height: 30px;
-padding-left: 10px;
+  line-height: 30px;
+  padding-left: 10px;
 }
 
 .plant-cards h3:last-child {
   margin-bottom: 10px;
+}
+
+.plant-cards:hover {
+  border-width: 2px;
+  border-style: solid rgb(163, 180, 145,0.7);
 }
