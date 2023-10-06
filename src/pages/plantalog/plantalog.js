@@ -1,14 +1,13 @@
-import React from "react";
+import SearchBar from "../../components/SearchBar/SearchBar";
 import "./plantalog.css";
 
 const Plantalog = () => {
+
   return (
-    <div>
-      <div className="plantalog-container">
-        <h1>Plantalog Page</h1>
-      </div>
+    <div className="wrapper">
+      <SearchBar/>
     </div>
-  );
+  )
 };
 
 export default Plantalog;

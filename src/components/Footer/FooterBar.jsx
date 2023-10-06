@@ -11,16 +11,17 @@ const FooterBar = () => {
       <div>
         <div className="footer-container">
           <h3 id="head">Plantism</h3>
-          <h4 id="madeBy">Design & Develop : Thananys S.</h4>
+          <h4 id="madeBy">Design & Develop : Thananya S.</h4>
           <div className="contact-container">
             <h3 id="contact">Contact</h3>
 
             <li>
               <img src={emailLogo} alt="email Logo" className="email-logo" />
-              Thananya.sih@gmail.com
+              <a href="mailto:thananya.sih@gmail.com">Thananya.sih@gmail.com</a>
+              
             </li>
             <li>
-              <img src={githubLogo} alt="github Logo" className="github-logo" />
+              <img src={githubLogo} alt="github Logo" href="https://github.com/Thananyasih"className="github-logo" />
               <a href="https://github.com/Thananyasih">ThananyaSih</a>
             </li>
           </div>

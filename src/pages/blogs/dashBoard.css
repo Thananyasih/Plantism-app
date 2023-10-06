@@ -1,0 +1,165 @@
+.head-board {
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  background-color: rgb(226, 234, 217, 0.9);
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+  padding: 2px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.head-board h1 {
+  font-size: 26px;
+}
+
+.board-container {
+  position: absolute;
+  top: 125px;
+  left: 80px;
+}
+
+.card-container {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  /* background-color: rgb(0, 0, 0); */
+  background-color: transparent;
+  border-radius: 20px;
+  border-color: rgb(0, 0, 0, 0.3);
+  border-style: dotted;
+  border-width: 2px;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.card-user {
+  display: flexbox;
+  position: absolute;
+  margin: 40px;
+}
+
+.card-user01,
+.card-user02,
+.card-user03,
+.card-user04,
+.card-user05 {
+  
+  width: 147px;
+  height: 145px;
+  border-radius: 50%;
+  /* background-color: rgb(226, 234, 217, 0.9); */
+  background-color: rgb(255, 169, 169, 0.5);
+  border-style: dotted;
+  border-color: rgb(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 1px;
+  margin-bottom: 27px;
+}
+
+.user-01,
+.user-02,
+.user-03,
+.user-04,
+.user-05 {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  margin: 10px;
+  width: 120px;
+  height: 120px;
+}
+/* .user-01:hover,
+.user-02:hover,
+.user-03:hover,
+.user-04:hover,
+.user-05:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+} */
+
+.user-02 {
+  top: 175px;
+}
+
+.card-user01:hover,
+.card-user02:hover,
+.card-user03:hover,
+.card-user04:hover,
+.card-user05:hover {
+  border-radius: 50%;
+  /* background-color: rgb(255, 169, 169, 0.5); */
+  transition: 0.2s;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5 {
+  position: absolute;
+  /* margin: 15px; */
+  top: 25px;
+  width: 760px;
+  left: 45px;
+  height: 100px;
+  background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.card-2 {
+  top: 200px;
+}
+
+.card-3 {
+  top: 370px;
+}
+
+.card-4 {
+  top: 545px;
+}
+
+.card-5 {
+  top: 715px;
+}
+
+.card-1 a,
+.card-2 a,
+.card-3 a,
+.card-4 a,
+.card-5 a {
+  font-weight: 600;
+  position: absolute;
+  color: black;
+  text-decoration: none;
+  left: 150px;
+  top: 15px;
+  font-size: 20px;
+}
+.card-1 a:hover,
+.card-2 a:hover,
+.card-3 a:hover,
+.card-4 a:hover,
+.card-5 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: rgba(163, 180, 145);
+}
+.card-1 h3,
+.card-2 h3,
+.card-3 h3,
+.card-4 h3,
+.card-5 h3 {
+  top: 37px;
+  position: relative;
+  font-size: 15px;
+  padding: 10px 100px;
+  left: 70px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-top: 2px;
+}

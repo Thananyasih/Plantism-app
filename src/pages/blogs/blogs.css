@@ -7,12 +7,13 @@
 
 .top-blogs {
   position: absolute;
-  top: 80px;
+  top: 100px;
   right: 20px;
   width: 400px;
   height: 900px;
   background-color: rgb(226, 234, 217, 0.9);
   border-radius: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .top-blogs h1 {
@@ -54,6 +55,8 @@
 }
 
 .pop-button {
+  font-size: 14px;
+  text-decoration: none;
   position: static;
   color: rgb(146, 146, 146);
   appearance: none;

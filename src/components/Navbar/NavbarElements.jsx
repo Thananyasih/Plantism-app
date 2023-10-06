@@ -15,6 +15,7 @@ const NavbarElement = () => {
         <div className="head-logo">
           <h1>PLANTISM</h1>
         </div>
+
         <div className="link-wrapper">
           <ul>
             <NavLink
