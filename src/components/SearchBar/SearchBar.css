@@ -5,8 +5,8 @@
 .search{
   display: flex;
   position: fixed;
-  top: 100px;
-  left: 400px;
+  top: 60px;
+  left: 100px;
   
 }
 
@@ -80,8 +80,8 @@ input:focus {
   /* margin-top: 200px; */
   margin-bottom: 20px;
   margin-right: 20px;
-  position: relative;
-  left: 0px;
+  position: absolute;
+  left: 250px;
   display: flexbox;
   flex-direction: row;
   width: 300px;
