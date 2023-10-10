@@ -98,11 +98,14 @@ input:focus {
 
   top: 290px;
   border-width: 2px;
-  border-style: dotted;
+  border-style: dashed;
   position: fixed;
   left: 480px;
   border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;  
+  border-bottom-right-radius: 20px;
+  
+  background-color: rgba(255, 188, 169, 0.2);
+  
 
   border-color:rgb(198, 198, 198);
 }
