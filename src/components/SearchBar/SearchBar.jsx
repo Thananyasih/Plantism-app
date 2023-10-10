@@ -93,6 +93,7 @@ const handleClicked = (name) => {
   
   return (  
     <div className="search-top">
+      <div className="plantalog-bg" />
       <h2 className="head-plantalog">Plantalog Search 🪴</h2>
         <div className="search" >
             {<FaSearch id="search-icon" />}
@@ -121,13 +122,14 @@ const handleClicked = (name) => {
           </div> 
         </div>
         <div className="plant-cards-container">
+        <div className="card-border"></div>
             
         {textInput && openedCardName && plantSearchResult && plantSearchResult.map((item) => {
           return ( openedCardName === item.common_name && <ul key={item.id} className="plant-cards" style={{display: 'block'}}>
                           
                           <h2>{item.common_name}</h2>
-                          <img className="" key={item.id} src={item.default_image?.medium_url} alt={item.common_name} style={{width:'400px', height: '400px'}}/> 
-                          <h2><b>Details</b></h2>  
+                          <img className="plant-card-image" key={item.id} src={item.default_image?.medium_url} alt={item.common_name}/> 
+                          {/* <h2><b>Details</b></h2>   */}
                           <h3><b>Scientific Name:</b> {item.scientific_name}</h3>
                           <h3><b>Cycle:</b> {item.cycle}</h3>
                           <h3><b>Watering:</b> {item.watering}</h3>                    
