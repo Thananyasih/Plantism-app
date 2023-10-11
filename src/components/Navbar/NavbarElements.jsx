@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavbarElement.css";
 
 const NavbarElement = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isChangingPage, setIsChangingPage] = useState(false)
 
   const openHandler = () => {
     setIsOpen(isOpen);
+    setIsChangingPage(isChangingPage)
   };
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+    
+  }, [isChangingPage])
 
   return (
     <nav>

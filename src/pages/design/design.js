@@ -11,8 +11,6 @@ const Design = () => {
         <h2>Zone Design</h2>
         <h2>Indoor Space</h2>
         <h2>Outdoor Space</h2>
-
-
       </div>
     </div>
   );

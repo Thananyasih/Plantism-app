@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+
 import "./App.css";
 import NavbarElement from "./components/Navbar/NavbarElements";
 import mainLogo from "./assets/mainLogo.png";
@@ -10,11 +12,12 @@ import Design from "./pages/design/design";
 import Blogs from "./pages/blogs/blogs";
 import Footer from "./components/Footer/FooterBar";
 
+
 function App() {
+
   return (
     <>
-      <div className="App-header">
-        <Footer />
+      <div className="App-header">       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -22,6 +25,7 @@ function App() {
           <Route path="/design" element={<Design />} />
           <Route path="/blogs" element={<Blogs />} />
         </Routes>
+        <Footer />
       </div>
       <NavbarElement />
       <img className="web-logo" src={mainLogo} alt="logo" />
