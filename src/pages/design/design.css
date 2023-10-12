@@ -1,6 +1,22 @@
 .design-container {
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  height: 100vh;
+  position: relative;
+  text-align: center;
+  top: 70px;
+  scroll-behavior: smooth;
+
+}
+
+.design-bg {
+  position: fixed;
+  background-color: rgba(255, 188, 169, 0.5);
+  width: 80%;
+  height: 80px;
+  border-bottom-right-radius: 20px;
+}
+
+.design-content {
+  text-align: left;
+  position: absolute;
+  top: 160px;
+  left: 100px;
 }

@@ -42,17 +42,17 @@ const Home = () => {
 
         <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant03} alt="home03" />
-          <div className="desc">Outdoor Space</div>
+          <div className="desc">Outdoor Design</div>
         </a>
 
         <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant04} alt="home04" />
-          <div className="desc">Indoor Space</div>
+          <div className="desc">Indoor Design</div>
         </a>
 
         <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant05} alt="home05" />
-          <div className="desc">Your Favourite Plants</div>
+          <div className="desc">Favourite Pottery</div>
         </a>
       </div>
 
