@@ -103,7 +103,7 @@ input:focus {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   
-  background-color: rgba(255, 188, 169, 0.2);
+  background-color: rgb(163, 180, 145,0.1);
   border-color:rgb(198, 198, 198);
 }
 
@@ -128,7 +128,7 @@ input:focus {
   height: 440px; 
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  /* background-color: rgba(255, 188, 169, 0.2); */
+  background-color: rgba(255, 188, 169, 0.2);
 
 }
 
