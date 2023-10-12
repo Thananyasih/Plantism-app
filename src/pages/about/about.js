@@ -29,13 +29,27 @@ const About = () => {
         This web page is a collection for planters 
         who aim to find plant breeds, how to take care of them, 
         and tips from the Plantism community. 
-        They can also try their ideas on the "Design and Space page" to create and plan their own styles.
+        Everyone can also look out ideas for their own space on the "Design and Space" page for inspiration with their own styles.
         </h3>
         <p />
         <h2>How to use Plantism ?</h2>
-        <ul>
-          <li>Searching for the right plant for your space.</li>
-        </ul>
+        
+        <div className="how-to-about-wrap">
+          <div className="how-to-about">
+            <img src="https://cdn.shortpixel.ai/spai/q_lossy+w_1668+h_938+to_auto+ret_img/cosmosmagazine.com/wp-content/uploads/2022/01/1200-GettyImages-1215942020.jpg" alt="find plants"></img>
+            <li>Searching for the right plant for your space.</li>
+          </div>
+            <div className="how-to-about">          
+          <img src="https://s.wsj.net/public/resources/images/BN-QB511_fixbur_M_20160930150944.jpg" alt="find plants"></img>
+            <li>Tips article from professional planter.</li>
+          </div>
+
+          <div className="how-to-about">        
+          <img src="https://www.epicgardening.com/wp-content/uploads/2023/09/Common-Houseplants-on-table.jpg" alt="find plants"></img>
+            <li>Find idea and design for your space.</li>
+          </div>
+        
+      </div>
       </div>
     </div>
   );
