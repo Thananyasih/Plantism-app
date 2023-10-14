@@ -1,15 +1,26 @@
 .design-container {
   position: relative;
-  text-align: center;
+  text-align: left;
   top: 80px;
   scroll-behavior: smooth;
+}
+
+.design-container img {
+  filter: grayscale(100%);
+  position: absolute;
+  top: 50px;
+}
+
+.design-container h1 {
+margin-left: 30px;
+position: absolute;
 
 }
+
 .graphic-plant {
   position: absolute;
   height: 100%;
   width: 100%;
-
   filter: opacity(0.3) ;
 }
 
@@ -26,6 +37,39 @@
 .design-content {
   text-align: left;
   position: absolute;
-  top: 160px;
-  left: 100px;
+  top: 180px;
+  left: 20px;
+  line-height: 25px;
+}
+
+.indoor-plant {
+  line-height: 30px;
+  position: relative;
+}
+
+.indoor-plant h2 {
+  text-align: center;
+  color: black;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 188, 169, 0.9);
+  padding: 5px 5px;
+  border-radius: 30px;
+}
+
+.indoor-plant img{
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.indoor-design {
+  position: absolute;
+  right: 0px;
+}
+
+.outdoor-plant img{
+  position: relative;
+  width: 100%;
+
 }
