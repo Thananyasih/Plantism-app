@@ -1,20 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./design.css";
-import { IndoorData, OutdoorData } from "../../components/SliderImage.jsx/SliderData";
-import IndoorSlider from "../../components/SliderImage.jsx/IndoorSlider";
-import OutdoorSlider from "../../components/SliderImage.jsx/OutdoorSlider";
+import { SlideData } from "../../components/SliderImage.jsx/SlideData";
+import ImageSlider from "../../components/SliderImage.jsx/ImageSlider";
 
 const Design = () => {
 
-  const [imgChange, setImgChange] = useState('indoor')
-
-  const onOptionChange = e => {
-    setImgChange(e.target.value)
-  }
-
   return (
     <div>
-      <div className="design-bg"></div>
+      <div className="design-bg"/>
       <div className="design-container">
         <h2>Design | Space Ideas </h2>
       </div>
@@ -49,28 +42,16 @@ const Design = () => {
         
         
         <div className="img-slide-container">
-          <h3>Select your interesting! </h3>
-          <div className="indoor-btn">
-            <input type="radio" value='indoor' name="img slider" checked={imgChange === 'indoor'} onChange={onOptionChange}/>
-            <label>Indoor Ideas</label>
-          </div>
+          <h3>For your interesting! </h3>
+        </div>
 
-          <div className="outdoor-btn">
-            <input type="radio" value='outdoor' name="img slider" checked={imgChange === 'outdoor'} onChange={onOptionChange}/>
-            <label>Outdoor Ideas</label>
+         <div className="img-slide">          
+            <h2>Outdoor Space Design Ideas</h2>
+            <ImageSlider slides={SlideData}/>
           </div>
         </div>
 
-          {imgChange === 'indoor' ? <div className="img-slide">          
-            <h2>Outdoor Space Design Ideas</h2>
-            <IndoorSlider slides={IndoorData}/>
-          </div> : ''}
-
-          {imgChange === 'outdoor' ? <div className="img-slide">          
-              <h2>Outdoor Space Design Ideas</h2>
-              <OutdoorSlider slides={OutdoorData}/>
-            </div> : ''} 
-        </div>    
+           
   );
 };
 

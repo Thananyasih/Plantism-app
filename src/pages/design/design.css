@@ -108,7 +108,7 @@ right: 30%;
 
 .img-slide {
   position: absolute;
-  left: 35%;
+  left: 28%;
 }
 
 .img-slide h2 {
@@ -119,9 +119,8 @@ right: 30%;
 
 .img-slide img {
   position: relative;
-  width: 900px;
-  right: 62%;
-  top: 300px;
+  width: 1000px;
+  top: 130px;
 }
 
 .img-slide-container {
@@ -149,8 +148,8 @@ right: 30%;
 
 .right-arrow {
   position: absolute;
-  top: 90%;
-  left: 820px;
+  top: 70%;
+  left: 930px;
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.8);
   /* color: rgb(0, 0, 0, 0.7); */
@@ -161,8 +160,8 @@ right: 30%;
 
 .left-arrow {
   position: absolute;
-  top: 90%;
-  left: -50px;
+  top: 70%;
+  left: 30px;
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.8);
   /* color: rgb(0, 0, 0, 0.7); */
@@ -173,12 +172,11 @@ right: 30%;
 
 .slide {
   opacity: 0;
-  transition-duration: 1s ease;
+  transition-duration: 1s ease-in-out;
 }
 
-.slide.active {
+.slide.open {
   opacity: 1;
   transition-duration: 1.5s;
-  transform: scale(1.05);
 }
 
