@@ -49,6 +49,7 @@ const handleClicked = (name) => {
   
   return (  
     <div className="search-top">
+      <div className="plantalog-bg" />
       <h2 className="head-plantalog">Plantalog Search 🪴</h2>
         <div className="search" >
             {<FaSearch id="search-icon" />}
