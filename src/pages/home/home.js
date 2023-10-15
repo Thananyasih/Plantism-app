@@ -4,7 +4,6 @@ import homePlant01 from "../../assets/homePlant01.jpg";
 import homePlant02 from "../../assets/homePlant02.jpg";
 import homePlant03 from "../../assets/homePlant03.jpg";
 import homePlant04 from "../../assets/homePlant04.jpg";
-import homePlant05 from "../../assets/homePlant05.jpg";
 
 import famous1 from "../../assets/monsteraDeliciosa.jpg";
 import famous2 from "../../assets/snakePlant.jpg";
