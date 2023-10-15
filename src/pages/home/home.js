@@ -22,6 +22,7 @@ const Home = () => {
         <h3>Select the card for fast ideas !</h3>
       </div>
 
+      <div className="home-bg-2" />
       <div className="img-container">
         <a href="/blogs" className="gallery">
           <img
@@ -50,10 +51,10 @@ const Home = () => {
           <div className="desc">Indoor Design</div>
         </a>
 
-        <a href="/design" className="gallery">
+        {/* <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant05} alt="home05" />
           <div className="desc">Favourite Pottery</div>
-        </a>
+        </a> */}
       </div>
 
       <div className="content-container">

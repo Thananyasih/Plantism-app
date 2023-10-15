@@ -1,12 +1,8 @@
-// key: sk-7psF64f8528c3e1441856
-// "https://perenual.com/api/species-list?page=1&key=sk-7psF64f8528c3e1441856"
 
 import { useEffect, useState } from "react";
-
 import { FaSearch } from "react-icons/fa";
-// import axios from "axios";
 import "./SearchBar.css";
-// import PlantsCard from "./PlantsCard";
+
 
 
 
@@ -17,22 +13,6 @@ const SearchBar = () => {
   const [openedCardName, setOpenCardName] = useState('')
   const [plantSearchResult, setPlantSearchResult] = useState([])
   
-  // const [plantPic, setPlantPic] = useState([]);
-  // const [isOpened, setIsOpened] = useState(false);
-  // const [isClick, setIsClick] = useState(false);
-  // const [testData, setTestData] = useState([]);
-  // const [plantCard, setPlantCard] = useState([])
-
-
-  // useEffect(() => {
-  //   axios.get('https://perenual.com/api/species-list?&key=sk-7psF64f8528c3e1441856')
-  //   .then((res) => {
-  //     // setPlantPic(res.data.data.default_image.original_url)
-  //     setPlantSearch(res.data.data)
-  //   }).catch((err) => console.error(err))
-  // },[search])
-  // console.log(plantSearch);
-  
 
   useEffect(() => {
   fetch('https://perenual.com/api/species-list?&key=sk-7psF64f8528c3e1441856')
@@ -42,31 +22,10 @@ const SearchBar = () => {
       // รับ data (ข้อมูลทั้งหมด) เข้ามาอยู่ใน setPlantDataFromAPI     
         setPlantDataFromAPI(data.data)
 
-        // setPlantPic(data.data[0].default_image.original_url);
-        // console.log(data.data[1].default_image.original_url);
-        // console.log(selected);
-
       // โดยถ้าไม่มีการเชื่อมต่อ API จะมี ERR ขึ้น && value ของ plantDataFromAPI = [] 
       }).catch((err) => console.error('ERR'))   
     },[])
-
-// TEST with Fake API  
-// useEffect(() => {
-//   fetch('http://localhost:4000/data')
-//     .then((res) => {
-//       return res.json()})
-//     .then(data => {
-//         setTestData(data)
-//         // console.log(data);
-//         // console.log(selected);
-//       })   
-//     },[])
-
-// const filtered = !search ? testData : testData.filter((item) => (
-//   item.common_name.toLowerCase().startsWith(search.toLowerCase())
-// ))
-
-    
+   
 useEffect(() => {   
   // ถ้า value ของ textInput === '' ให้มี value = setPlantDataFromAPI แต่ถ้า textInput !== '' filtered = value ที่ filter แล้วตาม textInput
   const filtered = !textInput ? plantDataFromAPI : (
@@ -81,19 +40,15 @@ useEffect(() => {
 
 const onChangeTextInputHandler = (e) => {
   setTextInput(e.target.value)
-  // console.log(textInput);
 }
 
 const handleClicked = (name) => {
-  // console.log(ref.current.id);
-  // setOpenCardName(isOpened => !isOpened)
   setOpenCardName(name)
   
 }
   
   return (  
     <div className="search-top">
-      <div className="plantalog-bg" />
       <h2 className="head-plantalog">Plantalog Search 🪴</h2>
         <div className="search" >
             {<FaSearch id="search-icon" />}

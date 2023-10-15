@@ -4,8 +4,11 @@ import "./plantalog.css";
 const Plantalog = () => {
 
   return (
-    <div className="wrapper">
-      <SearchBar/>
+    <div>
+      <div className="wrapper">
+        <SearchBar/>
+      </div>
+      <div className="plantalog-bg" />
     </div>
   )
 };

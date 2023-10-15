@@ -12,7 +12,7 @@
 }
 
 .design-container h1 {
-margin-left: 80px;
+margin-left: 50%;
 position: absolute;
 
 }
@@ -45,22 +45,64 @@ position: absolute;
 .indoor-plant {
   line-height: 30px;
   position: relative;
+  align-items: center;
 }
 
-.indoor-plant h2 {
+.indoor-site {
+  position: absolute;
+  margin-left: 30px;
   text-align: center;
+
+}
+
+.indoor-site h2 {
   color: black;
-  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
-  background-color: rgba(255, 188, 169, 0.5);
-  padding: 5px 5px;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(163, 180, 145, 0.5);
+  padding: 10px;
   border-radius: 30px;
 }
 
-.indoor-plant img{
-  width: 400px;
+
+.site-1 {
+  position: relative;
+  top: 10px;
+  padding: 10px 30px;
+  width: 300px;
+  /* background-color: rgba(255, 188, 169, 0.3); */
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.site-1 img{
+  position: relative;
+  width: 300px;
   height: auto;
-  border-radius: 20px;
-  margin: 10px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.site-1 a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.site-1 a:hover {
+  text-decoration: underline;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.site-1 h4 {
+  position: relative;
+  text-align: left;
+  font-weight: 500;
 }
 
 .indoor-design {

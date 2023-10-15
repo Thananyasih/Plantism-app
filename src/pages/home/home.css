@@ -27,12 +27,20 @@
   border-bottom-left-radius: 50px;
 }
 
+.home-bg-2 {
+  position: fixed;
+  background-color: rgba(255, 188, 169, 0.5);
+  top: 350px;
+  width: 100%;
+  height: 120px;
+}
+
 .img-container {
   position: absolute;
   text-align: center;
   align-items: center;
   top: 220px;
-  left: 50px;
+  left: 150px;
   display: flex;
   flex-direction: row;
   gap: 20px;
