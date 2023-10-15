@@ -41,12 +41,7 @@ const Design = () => {
 
         
         
-        <div className="img-slide-container">
-          <h3>For your interesting! </h3>
-        </div>
-
          <div className="img-slide">          
-            <h2>Outdoor Space Design Ideas</h2>
             <ImageSlider slides={SlideData}/>
           </div>
         </div>

@@ -1,6 +1,6 @@
 .design-container {
   position: relative;
-  top: 140px;
+  top: 120px;
   scroll-behavior: smooth;
 }
 
@@ -14,7 +14,6 @@
 position: relative;
 text-align: right;
 right: 30%;
-
 }
 
 .graphic-plant {
@@ -31,13 +30,12 @@ right: 30%;
   height: 80px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-
 }
 
 .design-content {
   text-align: left;
   position: absolute;
-  top: 160px;
+  top: 140px;
   left: 20px;
 }
 
@@ -51,7 +49,6 @@ right: 30%;
   position: absolute;
   margin-left: 30px;
   text-align: center;
-
 }
 
 .suggest-site-list h2 {
@@ -83,7 +80,6 @@ right: 30%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.3);
-
 }
 
 .site-1 a {
@@ -120,7 +116,7 @@ right: 30%;
 .img-slide img {
   position: relative;
   width: 1000px;
-  top: 130px;
+  top: 20px;
 }
 
 .img-slide-container {
@@ -148,7 +144,7 @@ right: 30%;
 
 .right-arrow {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 930px;
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.8);
@@ -160,7 +156,7 @@ right: 30%;
 
 .left-arrow {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 30px;
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.8);
