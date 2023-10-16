@@ -4,7 +4,6 @@ import homePlant01 from "../../assets/homePlant01.jpg";
 import homePlant02 from "../../assets/homePlant02.jpg";
 import homePlant03 from "../../assets/homePlant03.jpg";
 import homePlant04 from "../../assets/homePlant04.jpg";
-import homePlant05 from "../../assets/homePlant05.jpg";
 
 import famous1 from "../../assets/monsteraDeliciosa.jpg";
 import famous2 from "../../assets/snakePlant.jpg";
@@ -22,6 +21,7 @@ const Home = () => {
         <h3>Select the card for fast ideas !</h3>
       </div>
 
+      <div className="home-bg-2" />
       <div className="img-container">
         <a href="/blogs" className="gallery">
           <img
@@ -42,18 +42,18 @@ const Home = () => {
 
         <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant03} alt="home03" />
-          <div className="desc">Outdoor Space</div>
+          <div className="desc">Outdoor Design</div>
         </a>
 
         <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant04} alt="home04" />
-          <div className="desc">Indoor Space</div>
+          <div className="desc">Indoor Design</div>
         </a>
 
-        <a href="/design" className="gallery">
+        {/* <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant05} alt="home05" />
-          <div className="desc">Your Favourite Plants</div>
-        </a>
+          <div className="desc">Favourite Pottery</div>
+        </a> */}
       </div>
 
       <div className="content-container">

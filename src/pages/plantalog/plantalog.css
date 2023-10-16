@@ -4,3 +4,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.plantalog-bg-container img{
+  width: 100%;
+  position: fixed;
+  filter: opacity(30%);
+}

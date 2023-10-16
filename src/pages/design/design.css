@@ -1,6 +1,281 @@
 .design-container {
-  display: flex;
-  justify-content: right;
-  align-items: right;
+  position: relative;
+  top: 100px;
+  scroll-behavior: smooth;
+}
+
+.design-container img {
+  filter: grayscale(100%);
+  filter: opacity(30%);
+  position: absolute;
+}
+
+.design-container h2 {
+position: relative;
+text-align: right;
+right: 28%;
+}
+
+.graphic-plant {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: opacity(0.3) ;
+}
+
+.design-bg {
+  position: fixed;
+  background-color: rgba(255, 188, 169, 0.5);
+  width: 100%;
+  height: 80px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.design-content {
+  text-align: left;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+.suggest-site {
+  line-height: 30px;
+  position: relative;
+  align-items: center;
+}
+
+.suggest-site-list {
+  position: absolute;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.suggest-site-list h2 {
+  position: relative;
+  color: black;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(163, 180, 145, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.site-1 {
+  position: relative;
+  top: 20px;
+  padding: 10px 30px;
+  width: 250px;
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: rgba(0, 0, 0, 0.5);
+  line-height: 25px;
+}
+
+.site-1:hover {
+  background-color: rgba(255, 188, 169, 0.3);
+}
+
+.site-1 img{
+  position: relative;
+  margin: 10px;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.site-1 a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.site-1 a:hover {
+  text-decoration: underline;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.site-1 h4 {
+  position: relative;
+  text-align: left;
+  font-weight: 500;
+}
+
+.img-slide {
+  position: absolute;
+  left: 28%;
+}
+
+.img-slide h2 {
+  position: relative;
+  top: 140px;
+}
+
+.img-slide img {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  top: 10px;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.img-slide-container {
+  position: absolute;
+  left: 35%;
+  top: 28%;
+}
+
+.planter-container {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  left: 1080px;
+  width: 20%;
+  top: 820px;
+}
+
+.planter-container li{
+list-style: none;
+padding: 5px;
+margin-bottom: 15px;
+border: 1px;
+border-style: dashed;
+border-radius: 10px;
+}
+
+.planter-container li:hover {
+border-style: solid;
+background-color: rgba(255, 188, 169, 0.3);
+padding: 10px;
+transition: 0.2s;
+}
+
+.planter-container h3 {
+  margin-bottom: 10px;
+}
+
+.planter-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.planter-container a:hover {
+  font-weight: 500;
+  transition-duration: 2s ease-in;
+}
+
+.indoor-container h2, .indoor-container h4{
+  position: relative;
+  text-align: center;
+  top: 740px;
+  line-height: 25px;
+}
+
+.indoor-slide-container img{
+  position: relative;
+  width: 570px;
+  top: 590px;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+
+
+  
+}
+
+/*/////// Image Slider Styling ///////*/
+.slider {
+  position: relative;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  left: 930px;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 2s ease-in;
+}
+
+.slide.open {
+  opacity: 1;
+  transition-duration: 2s;
+  scale: 0.98;
+}
+
+
+/* /////// Indoor slider /////// */
+
+.indoor-slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indoor-image {
+  border-radius: 10px;
+}
+
+.right-arrow-2 {
+  position: absolute;
+  top: 120%;
+  left: 1000px;
+  font-size: 2rem;
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow-2 {
+  position: absolute;
+  top: 120%;
+  left: 390px;
+  font-size: 2rem;
+  /* color: rgba(255, 255, 255, 0.8); */
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.indoor-slide {
+  opacity: 0;
+  transition-duration: 2s ease-in;
+}
+
+.indoor-slide.open {
+  opacity: 1;
+  transition-duration: 2s;
+  scale: 0.98;
 }

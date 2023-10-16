@@ -1,12 +1,17 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair:ital@0;1&family=Poppins:wght@200;400;600&family=Tenor+Sans&display=swap");
 
-.App {
-  text-align: center;
-}
+
+  .App {
+    text-align: center;
+  }
+
 
 body {
   font-size: 100%;
+  width: 100%;
 }
 
 .App-logo {
@@ -18,7 +23,7 @@ body {
   position: static;
   /* background-color: rgb(226, 234, 217); */
   /* background-color: rgb(163, 180, 145); */
-  background-color: #fff;
+  /* background-color: #fff; */
   min-height: 100vh;
 }
 
