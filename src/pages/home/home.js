@@ -31,21 +31,21 @@ const Home = () => {
             style={{ height: "374.53px" }}
           />
 
-          <div href="/blogs.html" className="desc">
+          <div href="/blogs" className="desc">
             Tips from Planter
           </div>
         </a>
-        <a href="/plantalog.html" className="gallery">
+        <a href="/plantalog" className="gallery">
           <img className="img-plant" src={homePlant02} alt="home02" />
           <div className="desc">Plant Searching</div>
         </a>
 
-        <a href="/design.html" className="gallery">
+        <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant03} alt="home03" />
           <div className="desc">Outdoor Design</div>
         </a>
 
-        <a href="/design.html" className="gallery">
+        <a href="/design" className="gallery">
           <img className="img-plant" src={homePlant04} alt="home04" />
           <div className="desc">Indoor Design</div>
         </a>
