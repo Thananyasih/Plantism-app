@@ -1,7 +1,8 @@
 import React from "react";
 import "./design.css";
-import { SlideData } from "../../components/SliderImage/SlideData";
+import { IndoorData, SlideData } from "../../components/SliderImage/SlideData";
 import ImageSlider from "../../components/SliderImage/ImageSlider";
+import IndoorSlider from "../../components/SliderImage/IndoorSlider";
 
 
 const Design = () => {
@@ -43,13 +44,6 @@ const Design = () => {
             <ImageSlider slides={SlideData}/>
           </div>
 
-          <div className="indoor-container">
-            <h2>Indoor Design & Planter</h2>
-            <div>Everyone have own favourite indoor spot, Find out style that match with you !</div>
-          <div className="">
-          </div>
-          </div>
-
           <div className="planter-container">
             <h3>Planter Site</h3>
             <ul>
@@ -73,6 +67,13 @@ const Design = () => {
             </ul>
           </div>
           
+          <div className="indoor-container">
+            <h2>Indoor Design & Planter</h2>
+                <h4>Everyone have own favourite indoor spot, Find out style that match with you !</h4>
+            <div className="indoor-slide-container">
+              <IndoorSlider slides={IndoorData}></IndoorSlider>
+            </div>
+          </div>
 
         </div>
 

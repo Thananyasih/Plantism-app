@@ -1,4 +1,4 @@
-export const PotteryData = [
+export const IndoorData = [
     {
       image:
         'https://cdn.mos.cms.futurecdn.net/6Kowst46WKuB7BzkPs7Pcn-1920-80.jpg.webp'
