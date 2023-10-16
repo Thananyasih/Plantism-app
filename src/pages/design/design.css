@@ -1,6 +1,6 @@
 .design-container {
   position: relative;
-  top: 120px;
+  top: 100px;
   scroll-behavior: smooth;
 }
 
@@ -13,7 +13,7 @@
 .design-container h2 {
 position: relative;
 text-align: right;
-right: 30%;
+right: 28%;
 }
 
 .graphic-plant {
@@ -35,7 +35,7 @@ right: 30%;
 .design-content {
   text-align: left;
   position: absolute;
-  top: 140px;
+  top: 150px;
   left: 20px;
 }
 
@@ -52,6 +52,7 @@ right: 30%;
 }
 
 .suggest-site-list h2 {
+  position: relative;
   color: black;
   box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
   background-color: rgb(163, 180, 145, 0.5);
@@ -61,12 +62,13 @@ right: 30%;
 
 .site-1 {
   position: relative;
-  top: 15px;
+  top: 20px;
   padding: 10px 30px;
   width: 250px;
   border-radius: 10px;
   border-style: dotted;
   border-color: rgba(0, 0, 0, 0.5);
+  line-height: 25px;
 }
 
 .site-1:hover {
@@ -110,13 +112,13 @@ right: 30%;
 .img-slide h2 {
   position: relative;
   top: 140px;
-  /* left: 250px; */
 }
 
 .img-slide img {
   position: relative;
   width: 1000px;
-  top: 20px;
+  height: 600px;
+  top: 10px;
 }
 
 .img-slide-container {
@@ -125,8 +127,50 @@ right: 30%;
   top: 28%;
 }
 
-.indoor-btn label, .outdoor-btn label{
-  padding: 20px;
+.indoor-container {
+  position: relative;
+  text-align: center;
+  /* right: 40%; */
+  top: 710px;
+}
+
+.planter-container {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  left: 1080px;
+  width: 20%;
+  top: 630px;
+}
+
+.planter-container li{
+list-style: none;
+padding: 5px;
+margin-bottom: 15px;
+border: 1px;
+border-style: dashed;
+border-radius: 10px;
+}
+
+.planter-container li:hover {
+border-style: solid;
+background-color: rgba(255, 188, 169, 0.3);
+padding: 10px;
+transition: 0.2s;
+}
+
+.planter-container h3 {
+  margin-bottom: 10px;
+}
+
+.planter-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.planter-container a:hover {
+  font-weight: 500;
+  transition-duration: 2s ease-in;
 }
 
 /*/////// Image Slider Styling ///////*/
@@ -148,7 +192,6 @@ right: 30%;
   left: 930px;
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.8);
-  /* color: rgb(0, 0, 0, 0.7); */
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -160,7 +203,6 @@ right: 30%;
   left: 30px;
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.8);
-  /* color: rgb(0, 0, 0, 0.7); */
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -168,11 +210,12 @@ right: 30%;
 
 .slide {
   opacity: 0;
-  transition-duration: 1s ease-in-out;
+  transition-duration: 2s ease-in;
 }
 
 .slide.open {
   opacity: 1;
-  transition-duration: 1.5s;
+  transition-duration: 2s;
+  scale: 0.98;
 }
 
