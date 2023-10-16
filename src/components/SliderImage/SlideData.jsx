@@ -28,18 +28,17 @@ export const SlideData = [
     },
     {
       image:
-        'https://cdn.mos.cms.futurecdn.net/Xp2cZg5TLhCifaAyde9CcL.jpg'
+      'https://fashionjournal.com.au/wp-content/uploads/2017/11/PlantLifeBalance.jpg'},
+    {
+      image:
+        'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/at%2Fhouse%20tours%2F2022-01%2FLuna%20tour%2FIMG_5048'
     },
     {
       image:
-        'https://images.adsttc.com/media/images/60a6/8ece/f91c/813f/5800/0014/large_jpg/19King_Bill_Maynard_Swalwell.jpg?1621528264'
-    },
-    {
-      image:
-        'https://images.finegardening.com/app/uploads/2023/05/11133328/FG212PARobin-Parsons-garden-designer-West-Seattle-project_2503_Doreen-Wynja.jpg'    
+        'https://anthuriuminfo.com/wp-content/uploads/2021/09/3554_Landscape.jpg'    
       },
     {
       image:
-        'https://www.sunset.com/wp-content/uploads/mill-valley-veggie-garden-lead-backyard-pr-1022-e1665080777928.jpg'
+        'https://cdn.apartmenttherapy.info/image/upload/v1583105889/at/house%20tours/2020-03/thomas-d/_E5A8560.jpg'
     }
   ];
